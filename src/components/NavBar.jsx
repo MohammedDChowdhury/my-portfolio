@@ -5,14 +5,15 @@ import Home from "./Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
+import NoPage from './NoPage';
 import { Link } from 'react-router-dom'
 
-function NavBar() {
+const NavBar = () => {
   const navStyle = {
-    color:"white"
+    color:"black"
   }
   return (
-    <div>
+   
     <Router>
    
          
@@ -20,7 +21,7 @@ function NavBar() {
        <nav className={navStyle}>
          <h3>Logo</h3>
          <ul>
-           <Link to="/"></Link>
+           <Link className ="nav-links" to="/"></Link>
            <li>Home</li>
            <Link to="/about">
            <li>About</li>
@@ -29,6 +30,7 @@ function NavBar() {
            <li>Contact</li>
            </Link>
            </ul>
+           
    
         
       </nav>
@@ -39,16 +41,11 @@ function NavBar() {
      <Route exact path="/about" element={About}/>
 
      <Route exact path="/contact" element={Contact}/>
-     
-   
-    
+     <Route path="*" element={<NoPage />} />
       </Routes>
-      
-
-  
-
+    
     </Router>
-    </div>
+
   )
 }
 
