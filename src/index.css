@@ -41,12 +41,13 @@ body {
 }
 /* --------------- GENERAL STYLES --------------*/
 
-.containter {
+.container {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
 h1, h2, h3, h4, h5 {
   font-weight: 500;
+ 
 }
 h1 {
   font-size: 2.5rem;
@@ -54,7 +55,8 @@ h1 {
 section {
   margin-top: 8rem;
 }
-section > h2, section > h5 {
+section > h2,
+ section > h5 {
   text-align: center;
   color: var(--color-light);
 }
@@ -112,6 +114,7 @@ img {
 
   section {
     margin-top: 6rem;
+    height: 100vh;
   }
 }
 

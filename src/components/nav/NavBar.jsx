@@ -1,4 +1,13 @@
 import React from 'react'
+import './nav.css'
+import {AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineUser} from 'react-icons/ai'
+import {BiBook} from 'react-icons/bi'
+import {RiServiceLine} from 'react-icons/ri'
+import {BiMessageSquareDetail} from 'react-icons/bi'
+
+
+
 // import { Link } from 'react-router-dom'
 // import Home from "../home/Home";
 // // import NavBar from "./NavBar";
@@ -13,40 +22,17 @@ const NavBar = () => {
   //   color:"black"
   // }
   return (
-   <div>
-    Nav
-   </div>
-    // <Router>
-   
-         
-    // <div>
-    //    <nav className={navStyle}>
-    //      <h3>Logo</h3>
-    //      <ul>
-    //        <Link className ="nav-links" to="/"></Link>
-    //        <li>Home</li>
-    //        <Link to="/about">
-    //        <li>About</li>
-    //        </Link>
-    //        <Link to="/contact">
-    //        <li>Contact</li>
-    //        </Link>
-    //        </ul>
-           
-   
-        
-    //   </nav>
-    // </div>
+   <nav> 
+    <a href="/#"><AiOutlineHome/></a>
+    <a href="#about"><AiOutlineUser/></a>
+    <a href="#experience"><BiBook/></a>
+    <a href="#services"><RiServiceLine/></a>
+    <a href="#contact"><BiMessageSquareDetail/></a>
 
-    //  <Routes>
-    //  <Route exact path="/" element={Home}/>
-    //  <Route exact path="/about" element={About}/>
 
-    //  <Route exact path="/contact" element={Contact}/>
-    //  <Route path="*" element={<NoPage />} />
-    //   </Routes>
-    
-    // </Router>
+
+    </nav>
+
 
   )
 }
