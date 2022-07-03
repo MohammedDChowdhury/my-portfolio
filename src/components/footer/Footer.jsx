@@ -1,8 +1,47 @@
-import React from 'react'
-
-
+import React from "react";
+import "./footer.css";
+import { IoLogoTwitter } from "react-icons/io";
+import { IoLogoLinkedin } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
 export default function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <footer>
+      <a href="#" className="footer_logo">
+        MC
+      </a>
+      <ul className="permalinks">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div className="footer__socials">
+        <a href="https://linkedIn.com">
+          <IoLogoLinkedin />
+        </a>
+        <a href="https://github.com">
+          <IoLogoGithub />
+        </a>
+        <a href="https://twitter.com">
+          <IoLogoTwitter />
+        </a>
+      </div>
+
+      <div className="footer__copyright">
+        <small>&copy; MC. All Rights reserved</small>
+      </div>
+    </footer>
+  );
 }
