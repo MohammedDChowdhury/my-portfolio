@@ -28,13 +28,13 @@ export default function Footer() {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://linkedIn.com">
+        <a href="https://www.linkedin.com/in/mohammed-chowdhury-917127200">
           <IoLogoLinkedin />
         </a>
-        <a href="https://github.com">
+        <a href="https://github.com/MohammedDChowdhury">
           <IoLogoGithub />
         </a>
-        <a href="https://twitter.com">
+        <a href="https://twitter.com/lMohammedCl">
           <IoLogoTwitter />
         </a>
       </div>
