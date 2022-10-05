@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about.jpg";
+import MYSELF from "../../assets/myself.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { GiGraduateCap } from "react-icons/gi";
@@ -14,7 +14,7 @@ export default function About() {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="" />
+            <img src={MYSELF} alt="" />
           </div>
         </div>
 
